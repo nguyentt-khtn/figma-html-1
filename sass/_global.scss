@@ -1,9 +1,12 @@
 .wrapper {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
+    overflow-y: hidden;
 }
 .container {
-    width: 1290px;
+    max-width: 1290px;
     padding: 0 15px;
     margin: 0 auto;
+    overflow-y: hidden;
+
 }

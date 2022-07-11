@@ -35,36 +35,33 @@
         }
     }
 
-    &-image {
-        width: 509px;
-        height: 576px;
-        background: url('../images/sample\ user\ 1.png');
-        position: relative;
-
-        &__icon {
-            position: absolute;
-
-            &:nth-child(4) {
-                transform: translateX(148px) translateY(-78px);
+}
+@media screen and (max-width: 479px){
+    .hero {
+        margin-bottom: 100px;
+        &-container {
+            flex-direction: column-reverse;
+        }
+        &-detail {
+            width: 100%;
+            padding: 0 31px;
+            text-align: center;
+            h1{
+                font-size: 32px;
+                margin-bottom: 16px;
             }
-            &:nth-child(2) {
-                right: 0;
-                transform: translateY(-79px);
+            p{
+                font-size: 18px;
             }
-            &:nth-child(5) {
-                transform: translateX(-88px) translateY(-29px);
+            button {
+                font-size: 18px;
             }
-            &:nth-child(1) {
-                right: 0;
-                bottom: 0;
-                transform: translateY(95px);
-            }
-            &:nth-child(3) {
-                left: 0;
-                bottom: 0;
-                transform: translateX(-62px) translateY(53px);
-            }
-            
+        }
+        &-image {
+            width: 257px;
+            height: 293px;
+            margin: auto;
+            margin-bottom: 47px;
         }
     }
 }

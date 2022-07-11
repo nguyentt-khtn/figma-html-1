@@ -1,6 +1,7 @@
 .project {
     margin-bottom: 105px;
-    &-container{
+
+    &-container {
         .project-subtitle {
             font-size: $text-size;
             color: $text-color;
@@ -8,6 +9,7 @@
             margin-bottom: 53px;
         }
     }
+
     &-title {
         display: flex;
         gap: 0 16px;
@@ -15,25 +17,29 @@
         justify-content: center;
         margin-bottom: 43px;
 
-        h3{
+        h3 {
             color: $title-color;
             font-size: $title-size;
             text-align: center;
         }
     }
-    &-detail{
+
+    &-detail {
         display: flex;
-        gap:0 42px;
+        gap: 0 42px;
+
         &__image {
             margin: auto;
         }
-        &__element{
+
+        &__element {
             // min-width: 30%;
             position: relative;
             background-clip: padding-box;
-            border: 6px solid transparent;     
+            border: 6px solid transparent;
             background-color: white;
-            p{
+
+            p {
                 min-height: 191px;
                 max-width: 361px;
                 padding: 0 15px;
@@ -43,7 +49,8 @@
                 color: $text-color;
                 font-size: $text-small-size;
             }
-            a{
+
+            a {
                 display: flex;
                 align-items: center;
                 gap: 0 12px;
@@ -51,9 +58,10 @@
                 color: #0571AD;
                 font-size: $text-small-size;
                 padding-bottom: 13px;
-            }       
+            }
         }
-        &__element::before{
+
+        &__element::before {
             content: "";
             position: absolute;
             background: linear-gradient(302.35deg, #0D54BE 4.37%, #20ECD3 95.31%);
@@ -64,4 +72,44 @@
 
         }
     }
+}
+
+@media screen and (max-width: 479px) {
+    .project {
+
+        margin-bottom: 100px;
+        .container {
+            .project-subtitle {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 15px;
+
+            h3 {
+                font-size: 25px;
+            }
+        }
+
+        &-detail {
+            flex-direction: column;
+            width: 100%;
+            padding: 0 43px;
+
+            &__element {
+                margin-bottom: 69px;
+                p{
+                    font-size: 18px;
+                    min-height: 114px;
+                    max-width: 253px;
+                }
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
 }

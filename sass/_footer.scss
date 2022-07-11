@@ -1,5 +1,6 @@
 .footer {
-    background: url('../images/wave.svg') no-repeat 100%;
+    background: url('../images/wave.svg') no-repeat;
+    background-size: cover;
     color: white;
     font-size: $text-size;
 
@@ -21,17 +22,57 @@
             gap: 0 65px;
         }
     }
+
     &-email {
-        p{
+        p {
             margin-bottom: 25px;
         }
+
         &__detail {
             display: flex;
             align-items: center;
-            gap:0 22px;
+            gap: 0 22px;
 
-            span{
+            span {
                 color: #0ACBBF;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .footer {
+        font-size: 25px;
+        &-container {
+            padding: 47px 22px;
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+        &-social {
+            p {
+                margin-bottom: 12px;
+            }
+            &__icon {
+                justify-content: space-between;
+                gap: 0;
+                img{
+                    width: 30px;
+                }
+                margin-bottom: 33px;
+            }
+        }
+        &-email {
+            p {
+                text-align: center;
+                margin-bottom: 12px;
+            }
+    
+            &__detail {
+                justify-content: space-between;
+                gap:0;
+                img {
+                    width: 30px;
+                }
             }
         }
     }
