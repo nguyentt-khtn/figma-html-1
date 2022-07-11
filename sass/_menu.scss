@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    gap: 0 112px;
+
+    &-item {
+        padding: 35px 0;
+    }
+    .item-project{
+        display: flex;
+        gap:0 12px;
+    }
+}

@@ -1,0 +1,38 @@
+.footer {
+    background: url('../images/wave.svg') no-repeat 100%;
+    color: white;
+    font-size: $text-size;
+
+    &-container {
+        padding-top: 149px;
+        padding-bottom: 145px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-social {
+        p {
+            margin-bottom: 34px;
+
+        }
+
+        &__icon {
+            display: flex;
+            gap: 0 65px;
+        }
+    }
+    &-email {
+        p{
+            margin-bottom: 25px;
+        }
+        &__detail {
+            display: flex;
+            align-items: center;
+            gap:0 22px;
+
+            span{
+                color: #0ACBBF;
+            }
+        }
+    }
+}

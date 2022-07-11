@@ -1,0 +1,9 @@
+.header {
+    margin-bottom: 129px;
+    &-container {
+        display: flex;
+        justify-content: flex-end;
+        font-size: $menu-size;
+        color: black;
+    }
+}

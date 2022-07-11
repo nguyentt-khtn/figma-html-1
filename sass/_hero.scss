@@ -1,0 +1,70 @@
+.hero {
+    margin-bottom: 259px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 118px;
+    }
+
+    &-detail {
+        width: 630px;
+
+        h1 {
+            font-size: $name_size;
+            color: $text-title-color;
+            margin-bottom: 37px;
+        }
+
+        p {
+            font-size: $text-size;
+            color: $text-color;
+            line-height: calc(55/35);
+            font-weight: 400;
+            margin-bottom: 37px;
+        }
+
+        button {
+            padding: 10px 24px;
+            background-color: $button-color;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: $text-size;
+            font-weight: 400;
+        }
+    }
+
+    &-image {
+        width: 509px;
+        height: 576px;
+        background: url('../images/sample\ user\ 1.png');
+        position: relative;
+
+        &__icon {
+            position: absolute;
+
+            &:nth-child(4) {
+                transform: translateX(148px) translateY(-78px);
+            }
+            &:nth-child(2) {
+                right: 0;
+                transform: translateY(-79px);
+            }
+            &:nth-child(5) {
+                transform: translateX(-88px) translateY(-29px);
+            }
+            &:nth-child(1) {
+                right: 0;
+                bottom: 0;
+                transform: translateY(95px);
+            }
+            &:nth-child(3) {
+                left: 0;
+                bottom: 0;
+                transform: translateX(-62px) translateY(53px);
+            }
+            
+        }
+    }
+}

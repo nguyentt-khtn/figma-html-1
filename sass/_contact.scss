@@ -1,0 +1,62 @@
+.contact {
+    margin-bottom: 85px;
+
+    h3 {
+        color: $title-color;
+        font-size: $title-size;
+        text-align: center;
+        margin-bottom: 72px;
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 105px;
+    }
+
+    &-info {
+        input {
+            min-height: 100px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: $text-small-size;
+            padding: 0 18px;
+            border: 2px solid #838383;
+            box-shadow: 3px 6px 9px -1px #838383;
+            margin-bottom: 43px;
+        }
+        input::placeholder {
+            text-decoration-line: underline ;
+            text-decoration-color: #838383 ;
+            font-size: $text-small-size;
+            transform: translateY(15px);
+        }
+        textarea {
+            width: 100%;
+            min-height: 263px;
+            border: 2px solid #838383;
+            box-shadow: 3px 6px 9px -1px #838383;
+            border-radius: 8px;
+            margin-bottom: 43px;
+        }
+        textarea::placeholder{
+            font-size: $text-small-size;
+            padding: 15px 19px;
+        }
+        button {
+            margin: auto;
+            width: 182px;
+            height: 69px;
+            display: flex;
+            gap:0 5px;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            border-radius: 4px;
+            background-color: #6860E2;
+            color:#FFFDFD;
+            font-size: 36px;
+        }
+    }
+}

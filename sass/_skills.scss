@@ -1,0 +1,33 @@
+.skills {   
+    margin-bottom: 69px;
+    &-container {
+        h3{
+            color: $title-color;
+            font-size: $title-size;
+            text-align: center;
+            margin-bottom: 65px;
+        }
+    }
+
+    &-detail {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 56px;
+    }
+
+    &-program {
+        width: 688px;
+        p{
+            color: $text-color;
+            font-size: $text-size;
+            margin-bottom: 17px;
+        }
+        &__icon {
+            margin-left: 56px;
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 58px 67px;
+        }
+    }
+}
